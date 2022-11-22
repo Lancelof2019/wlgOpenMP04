@@ -105,6 +105,7 @@ Array2D<int> &WatershedAlg::distanceTransform(Array2D<int>& matArr, Array2D<int>
 for(int i=0;i<rows;i++){
    for(int j=0;j<cols;j++){
      if(matArr(i,j)==ZERO){
+	     visArr(i,j)=true;
               continue;
             }
 
